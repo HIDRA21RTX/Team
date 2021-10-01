@@ -1,0 +1,94 @@
+{
+  "name": "DH-HD STREAM",
+  "description": "Un bot de Pyrogram Telegram para transmitir archivos de Telegram a la web. @CLAY_MODS",
+  "keywords": [
+      "telegram",
+      "stream",
+      "web",
+      "pyrogram",
+      "aiohttp",
+      "python",
+      "plugin",
+      "modular",
+      "media"
+    ],
+  "repository": "https://github.com/HIDRA21RTX/Team/",
+  "success_url": "/",
+  "logo": "https://i.ibb.co/ZJzJ9Hq/link-3x.png",
+  "website": "avipatilweb.me",
+  "env": {
+      "ENV": {
+          "description": "Establezca esto en True si no desea bloquear el bot",
+          "value": "True"
+      },
+      "APP_NAME": {
+          "description": "Copie y pegue el nombre de la aplicación que acaba de escribir anteriormente."
+      },
+      "API_ID": {
+          "description": "Obtenga este valor de https://my.telegram.org"
+      },
+      "API_HASH": {
+          "description": "Obtenga este valor de https://my.telegram.org"
+      },
+      "BOT_TOKEN": {
+          "description": "Obtenga este valor de @BotFather"
+      },
+      "BIN_CHANNEL": {
+          "description": "El ID de canal bin. Lea el archivo Readme para obtener más información sobre este var"
+          
+      },
+      "DATABASE_URL": {
+          "description": "URI de MongoDB para guardar los ID de usuario cuando inician el bot por primera vez. Usaremos eso para transmitirles a ellos. Intentaré agregar más características relacionadas con la base de datos. Si necesita ayuda para obtener el URI puede preguntar en el Grupo de apoyo: https://t.me/linux_repo"
+      },
+      "OWNER_ID": {
+          "description": "Tu ID de Telegram"
+      },
+      "BANNED_CHANNELS": {
+          "description": "Coloque los IDs de los canales prohibidos donde el bot no funcionará. Puede agregar múltiples ID y separar con espacio .",
+          "required": false
+      },
+      "UPDATES_CHANNEL": {
+          "description": "Ponga un nombre de usuario de canal público, por lo que cada usuario tiene que unirse a ese canal para usar el bot. Debe agregar bot al canal como administrador para que funcione correctamente.",
+          "required": false
+          
+      },
+      "SLEEP_THRESHOLD": {
+          "description": "Temporizador de sueño Floodwait. Lea el archivo Readme para obtener más información sobre este var",
+          "required": false
+      },
+      "WORKERS": {
+          "description": "No. de los trabajadores que se asignará. Lea el archivo Readme para obtener más información sobre este var",
+          "required": false
+      },
+      "PORT": {
+          "description": "Puerto que desea que se escuche a su aplicación web. Lea el archivo Readme para obtener más información sobre este var",
+          "required": false
+      },
+      "NO_PORT": {
+          "description": "Si no quieres que se muestre tu puerto. Lea el archivo Readme para obtener más información sobre este var",
+          "value": "False",
+          "required": false
+      },
+      "BIND_ADRESS": {
+          "description": "Lea el archivo Readme para obtener más información sobre este var",
+          "required": false
+      },
+      "FQDN": {
+          "description": "Lea el archivo Readme para obtener más información sobre este var",
+          "required": false
+      },
+      "SESSION_NAME": {
+          "description": " Nombre de sesión para Bot [ Add CLAY_MODS ]",
+          "required": false
+      }
+  },
+  "buildpacks": [{
+      "url": "heroku/python"
+    }],
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "free"
+      }
+  }
+}
